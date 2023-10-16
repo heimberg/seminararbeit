@@ -1,0 +1,15 @@
+\begin{tikzpicture}[
+    vertex/.style={circle, draw, minimum size=1cm, thick, fill=white, font=\small},
+    title/.style={font=\bfseries},
+]
+
+% Draw the graph
+\node[vertex] (A) at (0, 0) {A};
+\node[vertex] (B) at (2, 1) {B};
+\node[vertex] (C) at (4, 0) {C};
+\node[vertex] (D) at (2, -1) {D};
+
+\draw[thick] (A) -- (B) -- (C) -- (D) -- (A);
+\draw[thick] (A) -- (C);
+
+\end{tikzpicture}
